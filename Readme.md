@@ -3,7 +3,7 @@
 
 This is the **React Native SDK** for RGB client applications. It provides a complete set of TypeScript/React Native bindings for interacting with the **RGB Node** and managing RGB-based transfers.
 
-⚠️ Important
+##⚠️ Important
 This SDK is not designed for untrusted clients (browsers, mobile apps, public APIs).
 It assumes the RGB Node is operated inside the same trust domain as the SDK user.
 
