@@ -3,9 +3,17 @@
 
 This is the **React Native SDK** for RGB client applications. It provides a complete set of TypeScript/React Native bindings for interacting with the **RGB Node** and managing RGB-based transfers.
 
+⚠️ Important
+This SDK is not designed for untrusted clients (browsers, mobile apps, public APIs).
+It assumes the RGB Node is operated inside the same trust domain as the SDK user.
+
+RGB Node: This SDK requires an RGB Node instance to function.
+The RGB Node must be self-hosted or privately managed.
+Public/shared RGB Node usage is not supported due to privacy and security constraints.
+
 > **Note**: This is the React Native version of the [original RGB SDK for Node.js](https://github.com/RGB-OS/rgb-sdk). If you're building a Node.js application, use the original SDK instead.
 
-> **RGB Node**: This SDK requires an RGB Node instance to function. For more information about RGB Node, including setup instructions, public endpoints and API documentation, see the [RGB Node repository](https://github.com/RGB-OS/RGB-Node/tree/public).
+> **RGB Node**: This SDK requires an RGB Node instance to function. For more information about RGB Node, including setup instructions and API documentation, see the [RGB Node repository](https://github.com/RGB-OS/RGB-Node).
 
 ---
 
@@ -95,8 +103,7 @@ This pattern enables advanced use cases, such as:
 
 Before using this SDK, you'll need an RGB Node instance running. You can:
 
-- Use the public RGB Node endpoints (testnet/mainnet) - see [RGB Node repository](https://github.com/RGB-OS/RGB-Node/tree/public) for details
-- Self-host your own RGB Node instance - see [RGB Node repository](https://github.com/RGB-OS/RGB-Node/tree/public) for setup instructions
+- Self-host your own RGB Node instance - see [RGB Node repository](https://github.com/RGB-OS/RGB-Node) for setup instructions
 
 ### Installation
 
